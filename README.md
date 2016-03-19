@@ -1,2 +1,2 @@
 # brettski.github.io
-github.io repo
+Test site using github.io and jekyll
