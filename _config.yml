@@ -17,3 +17,6 @@ github_username:  brettski
 
 # Build settings
 markdown: kramdown
+
+# Global
+timezone: America/Chicago
