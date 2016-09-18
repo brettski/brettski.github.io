@@ -10,13 +10,15 @@
           {% assign sorted_pages = site.pages | sort:"order" %}
           {% for my_page in sorted_pages %}
             {% if my_page.title %}
-            <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{my_page.title}}</a></li>
+              {% if page.url == my_page.url %}
+                <li class = "current"><a href="{{ my_page.url | prepend: site.baseurl }}">{{my_page.title}}</a></li>
+              {% else %}
+                <li><a href="{{ my_page.url | prepend: site.baseurl }}">{{my_page.title}}</a></li>
+              {% endif %}
             {% endif %}
           {% endfor %}
-          <li class="current"><a href="#">Latest Post</a></li>
+          <li><a href="#">Latest Post</a></li>
           <li><a href="#">Archives</a></li>
-          <li><a href="#">About Me</a></li>
-          <li><a href="#">Contact Me</a></li>
         </ul>
       </nav>
 
@@ -127,7 +129,8 @@
 
     <!-- Copyright -->
       <ul id="copyright">
-        <li>&copy; Untitled.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+        <li>&copy;2016 Brettski</li>
+        <li>Design: <a href="http://html5up.net">HTML5 UP (Striped)</a></li>
       </ul>
 
   </div>
