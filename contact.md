@@ -2,7 +2,7 @@
 layout: page
 title: Contact
 permalink: /contact/
-order: 1
+order: 3
 ---
 ## Social Stuff
 [twitter]()   
